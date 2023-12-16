@@ -1,9 +1,60 @@
 body {
-    background-color: blue;
+    background-color: white;
+    justify-content: center;
     }
 
+
+.container {
+    justify-content: center;
+    /* display: grid;
+    width: 100; */
+}
 
 #FirstRound {
 display: grid;
 align-self: center;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(6, 16%);
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .grid-container #category{
+    font-size: x-large;
+    color: #833934;
+    border: solid;
+  }
+  
+  .grid-container #question-grid{
+    font-size: large;
+    color: #833934;
+    border: solid;
+  }
+  
+  .grid-container #question-grid:hover{
+    font-weight: bold;
+    font-size: xx-large;
+  }
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: center;
+  
+}
+
+#texty {
+    justify-content: center;
 }
